@@ -1,0 +1,41 @@
+// COLOR VARIABLES
+$color-back-main:#313a41;
+$color-text-light:#fff;
+$color-back-sub:#000;
+$color-home:#8F99A1;
+$color-resume:#96848D;
+$color-work:#6D7993;
+$color-contact:#a9aeb6;
+$color-skills:#96848D;
+$color-text-dark:#444040;
+$color-header:#f1a3a3;
+
+
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    //padding: 3em;
+}
+
+body {
+    //font-family: $font-primary;
+    color: $color-text-dark;
+    font-weight: 300;
+    line-height: 1.6;   
+}
+
+.container {
+    display: grid;
+    grid-template-rows:80vh repeat(4, min-content);
+    grid-template-columns:[full-srart] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end] )[center-end] 1fr [full-end];
+    
+}

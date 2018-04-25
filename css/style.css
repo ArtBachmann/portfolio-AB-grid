@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: #444040;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 60vh min-content repeat(3, min-content);
+  grid-template-columns: repeat(8, minmax(min-content, 14rem)); }
+
+.work {
+  background-color: #6D7993; }
+
+.header {
+  background-color: #802828; }
+
+.contact {
+  background-color: #a9aeb6; }
+
+.resume {
+  background-color: #96848D; }
+
+.home {
+  background-color: #8F99A1; }
+
+.footer {
+  background-color: #313a41; }
