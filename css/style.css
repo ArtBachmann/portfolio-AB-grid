@@ -16,23 +16,33 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60vh min-content repeat(3, min-content);
-  grid-template-columns: repeat(8, minmax(min-content, 14rem)); }
+  grid-template-rows: 80vh repeat(4, min-content);
+  grid-template-columns: [full-srart] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .container > * {
+    padding: 40px;
+    font-size: 3rem; }
 
 .work {
-  background-color: #6D7993; }
+  background-color: #6D7993;
+  grid-column: center-start / center-end; }
 
 .header {
-  background-color: #802828; }
+  background-color: #f1a3a3;
+  grid-column: center-start / center-end; }
 
 .contact {
-  background-color: #a9aeb6; }
+  background-color: #a9aeb6;
+  grid-column: center-start / center-end; }
 
 .resume {
-  background-color: #96848D; }
+  background-color: #96848D;
+  grid-column: center-start / center-end; }
 
 .home {
-  background-color: #8F99A1; }
+  background-color: #8F99A1;
+  grid-column: center-start / center-end; }
 
 .footer {
-  background-color: #313a41; }
+  background-color: #313a41;
+  color: #fff;
+  grid-column: center-start / center-end; }
