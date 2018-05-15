@@ -10,39 +10,26 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #444040;
-  font-weight: 300;
-  line-height: 1.6; }
-
-.container {
-  display: grid;
-  grid-template-rows: 80vh repeat(4, min-content);
-  grid-template-columns: [full-srart] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  .container > * {
-    padding: 40px;
-    font-size: 3rem; }
+  color: #444040; }
 
 .work {
-  background-color: #6D7993;
-  grid-column: center-start / center-end; }
+  background-color: #6D7993; }
 
 .header {
-  background-color: #f1a3a3;
-  grid-column: center-start / center-end; }
+  background-color: #f1a3a3; }
 
 .contact {
-  background-color: #a9aeb6;
-  grid-column: center-start / center-end; }
+  background-color: #a9aeb6; }
 
 .resume {
-  background-color: #96848D;
-  grid-column: center-start / center-end; }
+  background-color: #96848D; }
 
 .home {
-  background-color: #8F99A1;
-  grid-column: center-start / center-end; }
+  background-color: #f5bf7e;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 8vw); }
 
 .footer {
   background-color: #313a41;
-  color: #fff;
-  grid-column: center-start / center-end; }
+  color: #fff; }

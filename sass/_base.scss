@@ -10,6 +10,11 @@ $color-skills:#96848D;
 $color-text-dark:#444040;
 $color-header:#f1a3a3;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
 
 
 *,
@@ -22,25 +27,8 @@ $color-header:#f1a3a3;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
-    //padding: 3em;
+    font-size: 62.5%;  
 }
-
-body {
-    //font-family: $font-primary;
+body {    
     color: $color-text-dark;
-    font-weight: 300;
-    line-height: 1.6;   
-}
-
-.container {
-    display: grid;
-    grid-template-rows:80vh repeat(4, min-content);
-    grid-template-columns:[full-srart] minmax(6rem, 1fr)  [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end] )[center-end] minmax(6rem, 1fr) [full-end];
-    
-    & > * {
-        padding: 40px;
-        font-size: 3rem;
-
-    }
-}
+  }
