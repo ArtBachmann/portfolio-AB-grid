@@ -1,14 +1,19 @@
 // COLOR VARIABLES
 $color-back-main:#313a41;
-$color-text-light:#fff;
+$color-text-light:#e7e7e7;
 $color-back-sub:#000;
-$color-home:#8F99A1;
-$color-resume:#96848D;
-$color-work:#6D7993;
-$color-contact:#a9aeb6;
+$color-home:#82858c;
+$color-resume:#8f99a1;
+$color-work:#b5a2a2;
+$color-contact:#9d908d;
 $color-skills:#96848D;
 $color-text-dark:#444040;
-$color-header:#f1a3a3;
+$color-container:#ddd9d9;
+$color-spanish-grey:#999999;
+$color-dark-liver:#4e4e4e;
+$color-onyx:#34383a;
+$color-rocket-metallic:#9d908d;
+
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px
@@ -28,7 +33,23 @@ $bp-small: 37.5em;    // 600px;
 html {
     box-sizing: border-box;
     font-size: 62.5%;  
+    background-color: d0d0d0;
 }
 body {    
-    color: $color-text-dark;
+    color: $color-text-light;
+    
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .container {
+      display: grid;
+      grid-template-rows: repeat(6, min-content);  
+      grid-template-columns:[full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content,10rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+      background-color: $color-container;
+      
+    //   & > * {
+    //       padding: 40px 40px 0 40px;
+    //       font-size: 3rem;
+    //   }
   }
