@@ -1,41 +1,38 @@
 %heading {
-//    font-family: $font-display;
+    font-family: Josefin+Sans;
     font-weight: 400;
 }
 
 .heading-1 {
     @extend %heading;
-    font-size: 4.5rem;    
-    color: wheat;   
+    font-size: 4.5vw;    
+    color: $color-text-light;   
     line-height: 1;
 }
-/*
+
 
 .heading-2 {
     @extend %heading;
-    font-size: 4rem;
+    font-size: 4vw;
+    color: $color-text-light;
     font-style: italic;
-    line-height: 1;
-
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    line-height: 0.8;
+    
 }
 
 .heading-3 {
     @extend %heading;
     font-size: 1.9rem;
-    color: $color-primary;
+    color:$color-text-light;
     text-transform: uppercase;
 }
-*/
+
 
 .heading-4 {
     @extend %heading;
-    font-size: 1.6rem;
-    color: burlywood;
-
-    /*&--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }*/
+    font-size: 1.2vw;
+    color:$color-text-light;
+    
 }
 /*
 .btn {
