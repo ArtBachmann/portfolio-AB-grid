@@ -16,14 +16,20 @@
 <body class="container">
 
   <header class="header">
-    <figure class="header__item header__item--image-1"><img src="img/keyboardLight.jpg" alt="keyboaerd" class="header__img">
+    <figure class="header__item header__item--image-1"><img src="img/keyboardLight.jpg" alt="keyboaerd" class="header__img--1">
     </figure>
 
-    <figure class="header__item header__item--image-2"><img src="img/art1.jpg" alt="art2" class="header__img">
+    <figure class="header__item header__item--image-2"><img src="img/art1.jpg" alt="art4" class="header__img--1">
     </figure>
 
     <div class="header__item header__item--header-1">
       <h1 class="heading-1">Art Bachmann</h1>
+      
+      <a href="https://github.com/ArtBachmann" target="_blank"><svg class="header__icon header__icon--github">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+         </svg></a>
+      <p class="header__item--vision">Ahkera JavaScript koodari, aina vain paremmaksi.</p>
+               
     </div>
 
     <div class="header__item header__item--header-4">
@@ -31,39 +37,46 @@
         No frameworks and libraries used.Under continous construction.
       </h4>
     </div>
+
+
    
     <div class="header__item header__item--home">        
      <svg class="header__icon header__icon--home">
         <use xlink:href="img/sprite.svg#icon-home"></use>
      </svg>  
-     <p><a href="#home" class="nav__link">etusivu</a></p>
+     <p><a href="#" class="nav__link nav__link--home tablink" onclick="openPage('home')">etusivu</a></p>
     </div>
+
+
     
     <div class="header__item header__item--resume">
-        <svg class="header__icon header__icon--home">
-            <use xlink:href="img/sprite.svg#icon-home"></use>
+        <svg class="header__icon header__icon--pencil2">
+            <use xlink:href="img/sprite.svg#icon-pencil2"></use>
          </svg> 
-         <p><a href="#resume" class="nav__link">ansioluettelu</a></p>
+         <p><a href="#" class="nav__link nav__link--resume tablink" onclick="openPage('resume')" >ansioluettelu</a></p>
         </div>
+
+
     
     <div class="header__item header__item--work">
-        <svg class="header__icon header__icon--home">
-            <use xlink:href="img/sprite.svg#icon-home"></use>
+        <svg class="header__icon header__icon--folder-open">
+            <use xlink:href="img/sprite.svg#icon-folder-open"></use>
          </svg> 
-         <p><a href="#work" class="nav__link">referenssit</a></p>
+         <p><a href="#" class="nav__link nav__link--work tablink" onclick="openPage('work')">referenssit</a></p>
         </div>
+
     
     <div class="header__item header__item--contact">
-        <svg class="header__icon header__icon--home">
-            <use xlink:href="img/sprite.svg#icon-home"></use>
+        <svg class="header__icon header__icon--envelop">
+            <use xlink:href="img/sprite.svg#icon-envelop"></use>
          </svg> 
-         <p><a href="#contact" class="nav__link">yhteystiedot</a></p>
+         <p><a href="#" class="nav__link nav__link--contact tablink" onclick="openPage('contact')">yhteystiedot</a></p>
         </div>
   </header>
 
   <!-- HOME -->
 
-  <section class="home">
+  <section id="home" class="home tabcontent">
       <div class="home__intro">
       <h3 id="home" class="heading-3">Tervetuloa</h3>
       <p class="p-usual">Kuka minä olen?</p>
@@ -100,7 +113,7 @@
 
   <!-- RESUME -->
 
-  <section id="resume"  class="resume">
+  <section id="resume"  class="resume tabcontent">
       <h2>Tyäelämääni yteenveto</h2>
       <h6>Tulevaisuuden supertyöntekijän ominaisuudet – sosiaalisesti taitava, kykenee reagoimaan nopeasti muuttuvaan työympäristöön,
         vaihtamaan työtehtävää tai jopa alaa. On valmis jatkuvaan uudelleen kouluttautumiseen ja haluaa oppia uutta.</h6>
@@ -159,7 +172,7 @@
 
   <!-- WORK EXAMPLES -->
 
-  <section class="work">   
+  <section id="work" class="work tabcontent">   
       <h2>Suoritukset</h2>
       <h6>Päämäärä on ollut tutkia moderneja teknologioita ja viimeisia käytäntöjä web+teknologioissa tällä nopeasti kehityvässa
         alla. Laakereillaan lepäilevä vitkastelija on tuomittu tuijottamaan kilpailijoiden perävaloja tästä ikuisuuteen.</h6>
@@ -183,7 +196,7 @@
 
   <!-- CONTACTS -->
    
-  <section class="contact">
+  <section id="contact" class="contact tabcontent">
       <h2>Contact</h2>
       <address class="contact__kotisivu">
         <br> Terhotie 3B 37
@@ -256,23 +269,25 @@
           &copy; Copyright 2018 by Art Bachmann.
         </p>
   </footer>
+  
   <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-      </script>
-      
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>
