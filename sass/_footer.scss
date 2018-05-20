@@ -2,7 +2,32 @@
     background-color: $color-back-main;
     color: $color-text-light;   
     grid-column: center-start / center-end;
-    display: grid;
+    //display: grid;
     font-size: 1.7rem;
     padding: 6rem;
+    margin-bottom: 60px;
+  &__btnSchool {
+	background-color:transparent;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	//font-family:Arial;
+	font-size:15px;
+	padding: 4px;    
+	text-decoration:none;
+    margin-bottom: 3px;	
 }
+&__btnSchool:hover {
+	background-color:$color-back-main-hover;
+}
+&__btnSchool:active {
+	position:relative;
+	top:1px;
+  }
+}
+
+
