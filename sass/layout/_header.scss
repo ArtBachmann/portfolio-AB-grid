@@ -14,8 +14,7 @@
       background-image: linear-gradient(to right top, rgba(23, 44, 44, 0.788),
       rgba(112, 94, 94, 0.795)), url(../img/keyboardLight.jpg);
       background-size: cover;
-      opacity: 0.8;
-      //background: $color-back-main;
+      opacity: 0.8;      
     }
 
     &--image-2 {
@@ -38,7 +37,7 @@
       padding-top: 2vw;
     }  
     &--header-4 {
-      display: inline;
+      display: inline-block;
       grid-row: 3 / span 1;
       grid-column: 5 / -1;
       background: $color-back-sub;
@@ -81,7 +80,8 @@
 
   &__icon {
     display: block;
-    fill: $color-text-dark;
+    //fill: $color-text-dark;
+    fill: #ffaa22;
     margin-left: auto;
     margin-right: auto;
     width: 3.4rem;
