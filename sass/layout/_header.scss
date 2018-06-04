@@ -34,16 +34,34 @@
       grid-column: 5 / -1;
       background: $color-back-main;
       padding-left: 6vw;
-      padding-top: 2vw;
+      padding-top: 2vh;
     }  
-    &--header-4 {
+
+    &--header-2 {
+      display: grid;
+      grid-row: 2 / 3;
+      grid-column: 5 / -1;
+      font-size: 3vw;
+
+      color:#fff;
+      //color: $color-text-light;
+      margin-bottom: 1.6vh;
+      margin-top: -1vh;
+      padding-left: 2vw;
+    } 
+
+    &--header-vision {
       display: inline-block;
       grid-row: 3 / span 1;
       grid-column: 5 / -1;
       background: $color-back-sub;
       padding-left: 4vw;
       //font-size: 1.7vw;
+      color:#fff;
+      //color: $color-text-light;
     }
+
+    
 
     &--home {
       grid-row: 4 / span 1;
@@ -70,16 +88,11 @@
       background: $color-contact;
     }
     
-    &--vision {
-      display: grid;
-      grid-row: 2 / 3;
-      grid-column: 5 / -1;
-      font-size: 1.7vw;
-    } 
+    
   }
 
   &__icon {
-    display: block;
+    display: inline-block;
     //fill: $color-text-dark;
     fill: #ffaa22;
     margin-left: auto;
@@ -94,7 +107,7 @@
       width: 5rem;
       height: 5rem;
       fill: aliceblue;
-      margin-left: 8vw;
+      margin-left: 4vw;
     }    
   }
 

@@ -16,15 +16,15 @@
 <body class="container">
 
   <header class="header">
-    <figure class="header__item header__item--image-1">
+    <figure class="header__item--image-1">
       <!-- <img src="img/keyboardLight.jpg" alt="keyboaerd" class="header__img--1"> -->
     </figure>
   
-    <figure class="header__item header__item--image-2">
+    <figure class="header__item--image-2">
       <img src="img/art1.jpg" alt="art4" class="header__img--1">
     </figure>
   
-    <div class="header__item header__item--header-1">
+    <div class="header__item--header-1">
       <h1 class="heading-1">Art Bachmann</h1>
   
       <a href="https://github.com/ArtBachmann" target="_blank">
@@ -32,11 +32,15 @@
           <use xlink:href="img/sprite.svg#icon-github"></use>
         </svg>
       </a>
-        <h4 class="header__item  header__item--vision">Työhakemus</h4>
+
       
-  
+      
+
+        <h2 class="header__item--header-2">Työhakemus</h2>
+        
     </div>
-    <div class="header__item header__item--header-4 ">
+
+    <div class="header__item--header-vision">
       <h3>Tama luonnos on rakennettu moderneilla webteknikoilla, puhtaalla javascriptilla ie kirjastoja ja kehyksia ole kaytettu.</h3>
     </div>
     
@@ -44,8 +48,9 @@
           No frameworks and libraries used.Under continous construction. -->
   
   
-    <div class="header__item header__item--home">
-      <a href="#" class="nav__link nav__link--home tablink" onclick="openPage('home')">
+    <div class="header__item--home">
+      <a href="#" class="nav__link nav__link--home tablink" onclick="openPage('home')"
+      id="defaultOpen">
         <svg class="header__icon header__icon--home">
           <use xlink:href="img/sprite.svg#icon-home"></use>
         </svg>
@@ -90,7 +95,7 @@
     
   <!-- HOME -->
 
-  <section id="home" class="home tabcontent">
+  <section id="home"  class="home tabcontent">
     <div class="home__intro">
       <h3 id="home" class="heading-3">Tervetuloa ja kiitos etta olette loytanut aikaa ja kiinnostusta tutustumaan minuun</h3>
       <p class="p-usual">Kuka minä olen?</p>

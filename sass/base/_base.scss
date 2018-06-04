@@ -18,10 +18,11 @@ $bp-small: 37.5em;    // 600px;
 html {
     box-sizing: border-box;
     font-size: 62.5%;  
-    background-color: d0d0d0;
+    //background-color: $color-home;
+    //d0d0d0;
 }
 body {    
-    color: $color-text-light;
+    //color: $color-home;
     
     font-weight: 300;
     line-height: 1.6;
@@ -31,7 +32,7 @@ body {
   .container {
       display: grid;
       grid-template-rows: repeat(6, min-content);  
-      grid-template-columns:[full-start] minmax(8vw, 1fr) [center-start] repeat(12, [col-start] minmax(min-content,12rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns:[full-start] minmax(10vw, 1fr) [center-start] repeat(12, [col-start] minmax(min-content,12rem) [col-end] ) [center-end] minmax(10vw, 1fr) [full-end];
       background-color: $color-container;
    
   }
