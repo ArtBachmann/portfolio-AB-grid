@@ -1,38 +1,47 @@
-
-
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
-
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
 
 *,
 *::before,
 *::after {
-    margin:0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;  
-    //background-color: $color-home;
-    //d0d0d0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  //background-color: $color-home;
+  //d0d0d0;
 }
-body {    
-    //color: $color-home;
-    
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: 5vh;
-  }
+body {
+  //color: $color-home;
 
-  .container {
-      display: grid;
-      grid-template-rows: repeat(6, min-content);  
-      grid-template-columns:[full-start] minmax(10vw, 1fr) [center-start] repeat(12, [col-start] minmax(min-content,12rem) [col-end] ) [center-end] minmax(10vw, 1fr) [full-end];
-      background-color: $color-container;
-   
-  }
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 5vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(10vw, 1fr) [center-start] repeat(
+      12,
+      [col-start] minmax(min-content, 12rem) [col-end]
+    ) [center-end] minmax(10vw, 1fr) [full-end];
+  background-color: $color-container;
+}
+
+.resume {
+  grid-column: center-start / center-end;
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 6vh);
+
+  background-color: $color-resume;
+}
