@@ -21,9 +21,11 @@
 	text-decoration:none;
     margin-bottom: 3px;	
 }
+
 &__btnSchool:hover {
 	background-color:$color-back-main-hover;
 }
+
 &__btnSchool:active {
 	position:relative;
 	top:1px;
