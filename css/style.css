@@ -153,7 +153,35 @@ body {
   padding: 6rem; }
 
 .resume {
-  display: inline; }
+  display: inline-block; }
+
+.resume-header {
+  display: inline-block;
+  color: #551b1b;
+  padding: 3rem;
+  padding-right: 160px;
+  font-size: 3.5rem; }
+
+.header-resume-section {
+  padding-left: 2vw;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  color: #551b1b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.text-resume-section {
+  color: #551b1b;
+  padding-top: .7rem;
+  padding-right: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.resume-header-block {
+  display: inline-block; }
+
+.btn-resume {
+  color: #551b1b; }
 
 .home {
   background-color: #ddd9d9;
@@ -161,12 +189,14 @@ body {
   display: grid;
   font-size: 1.7rem;
   padding: 6rem; }
-
-.heading-3 {
-  color: black; }
-
-.home__intro {
-  color: black; }
+  .home__intro {
+    color: #551b1b;
+    font-size: 1.7rem; }
+  .home__heading-2 {
+    color: #551b1b;
+    font-size: 1.9rem; }
+  .home__list {
+    color: #551b1b; }
 
 .footer {
   background-color: #313a41;
@@ -236,10 +266,9 @@ body {
     grid-row: 3 / span 1;
     grid-column: 5 / -1;
     background: #232020;
-    padding-left: 4vw;
-    font-size: 1.7rem;
-    font-weight: 300;
-    font-style: normal;
+    padding: .5vw 2vw;
+    font-size: 1.5rem;
+    font-weight: 200;
     color: #fff; }
   .header__item--home {
     grid-row: 4 / span 1;
@@ -299,8 +328,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
   .row::after {
     content: "";
     display: table;
@@ -314,10 +341,10 @@ body {
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }

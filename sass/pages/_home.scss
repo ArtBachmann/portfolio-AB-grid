@@ -5,16 +5,20 @@
 
   font-size: 1.7rem;
   padding: 6rem;
+
+
+&__intro {
+  color:rgb(85, 27, 27);
+  font-size: 1.7rem;
 }
 
-li {
-  // color: black;
+&__heading-2 {
+  color: rgb(85, 27, 27);
+  font-size: 1.9rem;
 }
 
-.heading-3 {
-  color: black;
+&__list {
+  color: rgb(85, 27, 27);
 }
 
-.home__intro {
-  color: black;
 }
