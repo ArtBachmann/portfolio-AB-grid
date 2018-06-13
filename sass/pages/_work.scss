@@ -4,6 +4,32 @@
     display: grid;  
     font-size: 1.7rem;
     padding: 6rem;
+    padding-top: 3rem;
+
+    &__btn-School {
+      background-color:transparent;
+      -moz-border-radius:6px;
+      -webkit-border-radius:6px;
+      border-radius:6px;
+      border:1px solid #ffaa22;
+      display:inline-block;
+      cursor:pointer;
+      color:#fff;
+      //font-family:Arial;
+      font-size:15px;
+      padding: 4px 7px;    
+      text-decoration:none;
+      margin: 1rem 1rem;	
+    }
+    
+    &__btnSchool:hover {
+      background-color:$color-back-main-hover;
+    }
+    
+    &__btnSchool:active {
+      position:relative;
+      top:1px;
+      }
 }
 
 

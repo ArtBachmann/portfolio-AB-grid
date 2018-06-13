@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Art Bachmann työhakemus</title>
@@ -20,33 +21,24 @@
       <!-- <img src="img/keyboardLight.jpg" alt="keyboaerd" class="header__img--1"> -->
     </figure>
 
-    <!-- <figure class="header__item--image-2">
+    <figure class="header__item--image-2">
       <img src="img/art1.jpg" alt="art4" class="header__img--1">
-    </figure> -->
+    </figure>
+
+
 
     <div class="header__item--header-1">
       <h1 class="heading-1">Art Bachmann</h1>
-
-      <a href="https://github.com/ArtBachmann" target="_blank">
-        <svg class="header__icon header__icon--github">
-          <use xlink:href="img/sprite.svg#icon-github"></use>
-        </svg>
-      </a>
-
-
-
-
-      <h2 class="header__item--header-2">Resume</h2>
-
     </div>
+
+    <div class="header__item--header-2">
+      <h2 class="heading-2">Resume</h2>
+    </div>
+
 
     <div class="header__item--header-vision">
-      <p>Tama luonnos on rakennettu moderneilla webteknikoilla, puhtaalla javascriptilla ie kirjastoja ja kehyksia ole kaytettu.</p>
+      <p class="heading-4">Kyky ja palava halu jatkuvaan oppimiseen on tärkeämpää kuin se, mitä osaamme tänään.</p>
     </div>
-
-    <!-- This site is written using vanilla JS, HTML5 and CSS3 with SASS only. 
-          No frameworks and libraries used.Under continous construction. -->
-
 
     <div class="header__item--home">
       <a href="#" class="nav__link nav__link--home tablink" onclick="openPage('home')" id="defaultOpen">
@@ -56,8 +48,6 @@
         <p>etusivu</p>
       </a>
     </div>
-
-
 
 
     <div class="header__item header__item--resume">
@@ -97,14 +87,16 @@
   <!-- HOME -->
 
   <section id="home" class="home tabcontent">
+
     <div class="home__intro">
-      <p>Tulevaisuuden supertyöntekijän ominaisuudet – sosiaalisesti taitava, kykenee reagoimaan nopeasti muuttuvaan työympäristöön,
-        vaihtamaan työtehtävää tai jopa alaa. On valmis jatkuvaan uudelleen kouluttautumiseen ja haluaa oppia uutta...</p>
+      <p>Tulevaisuuden (huippu)tyontekijan ominaisuudet – sosiaalisesti taitava, kykenee reagoimaan nopeasti muuttuvaan työympäristöön,
+        vaihtamaan työtehtävää tai jopa alaa. On valmis jatkuvaan uudelleen kouluttautumiseen ja haluaa oppia uutta.</p>
     </div>
+
     <div>
       <p class="home__heading-2">...kuka minä olen?</p>
-      <p class="home__text">Työelämääni sisältyy melkein kaksi vuosikymmintää tekemisia kirvesmiehenä ja vaikka rakentaminekin vaatii tarkkuutta
-        ja virhetonta jälkea aloin kaipaa lisää älyllisiä haasteita ja halusin toteuttaa uusien haasteiden nälkää. Rakennusalan
+      <p class="home__text">Työelämääni sisältyy melkein kaksi vuosikymmintää fyysisen tyon tekemisia ja vaikka vaatis myos tarkkuutta ja virhetonta
+        jälkea aloin kaipaa lisaa älyllisiä haasteita ja halusin toteuttaa uusien haasteiden nälkää. Rakennusalan valiaikaisen
         tantuman aikana aloitin opinnot Metropolia avoimessa ammattikorkeakoulussa tietotekniikkan koulutusohjelman (120
         op.) mistä sain laajan perusosamisen. Seuraavaksi olen jatkaanut itseoppimista että kehittyä Fullstack web osaajaksi.
       </p>
@@ -127,8 +119,10 @@
 
   <section id="resume" class="resume tabcontent">
     <div class="resume-header-block">
-      <h3 class="resume-header">Työelämääni yteenveto</h3>
-      <a href="./documents/Opintosuoritusote.pdf " class="btn-resume">Lataa ansioluettelu</a>
+      <a href="./documents/Opintosuoritusote.pdf " class="resume__btn-school">Lataa ansioluettelu</a>
+      <a href="./documents/Opintosuoritusote.pdf " class="resume__btn-school">Lataa opintosioritusote</a>
+
+      <h3 class="resume__header">Työelämääni yhteenveto</h3>
     </div>
 
     <hr class="line" size="5">
@@ -203,21 +197,21 @@
         <div class="text-resume-section">
           <ul>
             <li>
-              <p>08.2006 - 05.2008 Vaihtoaitio OY, Rakennusmies 11.2009 – 12.2010</p>
+              <p>08.2006 - 05.2008 Vaihtoaitio OY, kirvesmies 11.2009 – 12.2010</p>
             </li>
             <li>
-              <p>Maxbuild OY, Rakennusmies 01.2011 – 11.2011</p>
+              <p>Maxbuild OY, rakennusmies 01.2011 – 11.2011</p>
             </li>
             <li>
               <p>
-                Rakennus Pemi OY, Rakennusmies
+                Rakennus Pemi OY, rakennusmies
               </p>
             </li>
             <li>
-              <p> LT Complex OY, Rakennusmies, 07.05.2012 - 10.08.2012</p>
+              <p> LT Complex OY, akennusmies, 07.05.2012 - 10.08.2012</p>
             </li>
             <li>
-              <p>RSH-Palvelut Tmi, Laatoittaja, 01.09.2012- 01.11.2012</p>
+              <p>RSH-Palvelut Tmi, laatoittaja, 01.09.2012- 01.11.2012</p>
             </li>
           </ul>
         </div>
@@ -239,10 +233,10 @@
               <p>viro : äidinkieli</p>
             </li>
             <li>
-              <p>suomi : hyvä???</p>
+              <p>suomi : hyvä</p>
             </li>
             <li>
-              <p>englanti : hyvä???</p>
+              <p>englanti : hyvä</p>
             </li>
             <li>
               <p>venäjä : hyvä</p>
@@ -272,6 +266,7 @@
   <!-- WORK EXAMPLES -->
 
   <section id="work" class="work tabcontent">
+    <a href="./documents/Opintosuoritusote.pdf " class="work__btn-School">Katso opintosioritusote</a>
     <h2>Suoritukset</h2>
     <h6>Päämäärä on ollut tutkia moderneja teknologioita ja viimeisia käytäntöjä web teknologioissa tällä nopeasti kehityvässa
       alla. Laakereillaan lepäilevä vitkastelija on tuomittu tuijottamaan kilpailijoiden perävaloja tästä ikuisuuteen.</h6>
@@ -321,55 +316,47 @@
       <br> Terhotie 3B 37
       <br> 01710 Vantaa
       <br> Suomi Finland
+      <br>
       <a href="http://www.artbachmann.fi ">
         www.artbachmann.fi/koti</a>.
       <br> Puh. 040 3738369
     </address>
     </div>
-    <!-- <div class="card card-block py-5 ">
-      <h3>Get In Touch</h3>
-      <p>Lorem ipsum dolor sit amet</p>
-      <form>
-        <div class="form-group ">
-          <div class="input-group input-group-lg ">
-            <span class="contact__input-group-addon bg-fatborder text-white ">
-              <i class="fa fa-user "></i>
-            </span>
-            <input type="text " class="form-control bg-inverse text-white " placeholder="Name ">
-          </div>
-        </div>
 
-        <div class="form-group ">
-          <div class="input-group input-group-lg ">
-            <span class="contact__input-group-addon bg-fatborder text-white ">
-              <i class="fa fa-envelope "></i>
-            </span>
-            <input type="email " class="form-control bg-inverse text-white " placeholder="Email ">
-          </div>
-        </div>
-
-        <div class="form-group ">
-          <div class="input-group input-group-lg ">
-            <span class="contact__input-group-addon bg-fatborder text-white ">
-              <i class="fa fa-pencil "></i>
-            </span>
-            <textarea rows="5 " class="form-control bg-inverse text-white " placeholder="Message "></textarea>
-          </div>
-        </div>
-        <input type="submit " class="btn btn-fatborder btn-block btn-lg " value="Submit ">
-      </form> -->
   </section>
-
 
 
   <!-- FOOTER -->
 
   <footer class="footer">
-    <a href="./documents/Opintosuoritusote.pdf " class="footer__btnSchool">Lataa opintosioritusote</a>
-    <a href="./documents/Opintosuoritusote.pdf " class="footer__btnSchool">Katso opintosioritusote</a>
-    <p class="copyright">
-      &copy; Copyright 2018 Art Bachmann.
-    </p>
+
+    <div class="github">
+      <a href="https://github.com/ArtBachmann" target="_blank">
+        <svg class="footer__icon--github">
+          <use xlink:href="img/sprite.svg#icon-github"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="twitter">
+      <a href="https://twitter.com/ArtBachmann" target="_blank">
+        <svg class="footer__icon--twitter">
+          <use xlink:href="img/sprite.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="copyright">
+      <p>
+        &copy; Copyright 2018
+      </p>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Art Bachmann
+      </p>
+    </div>
   </footer>
 
   <script>
@@ -387,7 +374,7 @@
       elmnt.style.backgroundColor = color;
 
     }
-    // Get the element with id="defaultOpen" and click on it
+
     document.getElementById("defaultOpen").click();
   </script>
 </body>

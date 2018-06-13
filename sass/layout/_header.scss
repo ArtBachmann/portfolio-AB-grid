@@ -3,9 +3,9 @@
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, vw);
+  grid-template-rows: repeat(4, 1fr);
 
-  padding-top: 3vh;
+  padding-top: 3vh;  
 
   &__item {
     &--image-1 {
@@ -32,12 +32,14 @@
       border: 1px solid $color-back-main;
     }
 
+
+
     &--header-1 {
       display: grid;
-      grid-row: 1 / span 2;
+      grid-row: 1 / 3;
       grid-column: 5 / -1;
       background: $color-back-main;
-      padding-left: 6vw;
+      padding-left: 9vw;
       padding-top: 2vh;
     }
 
@@ -45,23 +47,19 @@
       display: grid;
       grid-row: 2 / 3;
       grid-column: 5 / -1;
-      font-size: 3vw;
-
-      color: #fff;
-      //color: $color-text-light;
-      margin-bottom: 1.6vh;
-      margin-top: -1vh;
-      padding-left: 2vw;
+      background: $color-back-main;
+      justify-self: center;   
+      align-self: center;    
     }
 
     &--header-vision {
-      display: inline-block;
+      display: grid;
       grid-row: 3 / span 1;
       grid-column: 5 / -1;
       background: $color-back-sub;
-      padding: .5vw 2vw;
-      font-size: 1.5rem;
-      font-weight: 200;      
+      padding: .5vw 3vw;
+      font-size: 1.7rem;
+      font-weight: 300;      
       color: #fff;
       //color: $color-text-light;
     }
@@ -93,23 +91,13 @@
   }
 
   &__icon {
-    display: inline-block;
-    //fill: $color-text-dark;
-    fill: #ffaa22;
+    display: grid;    
+    fill: $color-fill;
     margin-left: auto;
     margin-right: auto;
     width: 3.4rem;
     height: 3.4rem;
-    padding-top: 0.8rem;
-
-    &--github {
-      grid-row: 1 / 2;
-      grid-column: 11 / 12;
-      width: 5rem;
-      height: 5rem;
-      fill: aliceblue;
-      margin-left: 4vw;
-    }
+    padding-top: 0.8rem;    
   }
 
   &__img {
@@ -134,7 +122,7 @@
       display: grid;
       justify-items: center;
       color: $color-text-dark;
-      font-size: 1.2vw;
+      font-size: 1.4vw;
       text-transform: uppercase;
       padding-top: 0.4rem;
       padding-bottom: 1rem;

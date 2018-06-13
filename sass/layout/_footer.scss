@@ -1,35 +1,37 @@
 .footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;		
     background-color: $color-back-main;
-    color: $color-text-light;   
-    grid-column: center-start / center-end;
-    //display: grid;
+    color: $color-iconfill;   
+    grid-column: center-start / center-end;    
     font-size: 1.7rem;
-    padding: 6rem;
-    margin-bottom: 60px;
-  &__btnSchool {
-	background-color:transparent;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#fff;
-	//font-family:Arial;
-	font-size:15px;
-	padding: 4px;    
-	text-decoration:none;
-    margin-bottom: 3px;	
-}
+    padding: 6rem;	
 
-&__btnSchool:hover {
-	background-color:$color-back-main-hover;
-}
+	
+	&__icon--github {		
+		//display: inline-block;
+		width: 4.4rem;
+		height: 4.4rem;
+		fill: $color-iconfill;
+	  margin-left: 3vw;
+	}
 
-&__btnSchool:active {
-	position:relative;
-	top:1px;
-  }
+	&__icon--twitter {	
+		//display: inline-block;
+		width: 4.4rem;
+		width: 4.4rem;
+		height: 4.4rem;
+		fill: $color-iconfill;	
+		margin-left: 2vw;
+	}
+
+	.copy {		
+		//display: inline-block;
+		width: 4.4rem;
+		color: $color-iconfill;
+		//margin-right: 6vw;	
+	}
 }
 
 

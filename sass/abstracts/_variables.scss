@@ -1,22 +1,26 @@
+
+
 // COLORS
 
 $color-back-main: #313a41;
-$color-text-light: #e7e7e7;
 $color-back-sub: #232020;
-//$color-home:#82858c;
-//$color-home:#cfd2da;
-$color-home: #ddd9d9;
-//$color-resume:#8f99a1;
-//$color-resume:#d0d9e0;
+$color-fill: #ffaa22;
+$color-iconfill: #bfdaf1;
+
+$color-text-light: #e7e7e7;
+$color-text-dark: #444040;
+$color-text-darkred:#551b1b;
+$color-text-lightblue:#bfdaf1;
+
+$color-home: #cccccc;
+$color-home-light:#cecccc;
+$color-home-light-border:#c7bdc2;
 $color-resume: silver;
-//$color-work:#b5a2a2;
-//$color-work:#b4babd;
-$color-work: #8e9b9d;
-//$color-contact:#9d908d;
-$color-contact: #758383;
+$color-work: #b4bdbe;
+$color-contact: #abb4b4;
+
 
 $color-skills: #96848d;
-$color-text-dark: #444040;
 $color-container: #eaeeed;
 $color-spanish-grey: #999999;
 $color-dark-liver: #4e4e4e;
@@ -26,6 +30,7 @@ $color-back-main-hover: #495760;
 
 // FONT
 $default-font-size: 1.6rem;
+$main-text-font: Merriweather, serif;
 
 // GRID
 $grid-width: 114rem;

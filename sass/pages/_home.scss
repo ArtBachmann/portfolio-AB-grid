@@ -2,23 +2,38 @@
   background-color: $color-home;
   grid-column: center-start / center-end;
   display: grid;
-
-  font-size: 1.7rem;
-  padding: 6rem;
-
+  font-family: Merriweather, serif;
+  font-size: 1.8rem;
+  padding: 8rem 6rem; 
 
 &__intro {
-  color:rgb(85, 27, 27);
-  font-size: 1.7rem;
+  color:rgb(85, 27, 27);  
+  font-size: 1.8rem;
+  text-indent: 3vw;
+  margin-bottom: 4rem;
+  background-color: $color-home-light;
+  border: 1px solid $color-home-light-border;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+&__text {
+  color:rgb(85, 27, 27);  
+  background-color: $color-home-light;
+  border: 1px solid $color-home-light-border;
+  text-indent: 3vw;
+  font-size: 1.6rem;  
+  padding: 1rem;
 }
 
 &__heading-2 {
-  color: rgb(85, 27, 27);
-  font-size: 1.9rem;
+  color: rgb(126, 18, 18); 
+  text-indent: 5vw;
+  font-size: 2.2rem;
+  font-weight: 400; 
 }
 
 &__list {
   color: rgb(85, 27, 27);
 }
-
 }
