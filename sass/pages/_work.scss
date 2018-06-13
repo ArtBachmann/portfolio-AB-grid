@@ -2,34 +2,41 @@
     background-color: $color-work;
     grid-column: center-start / center-end;
     display: grid;  
-    font-size: 1.7rem;
-    padding: 6rem;
-    padding-top: 3rem;
+    color: $color-back-sub;
+    font-family: Merriweather, serif;    
+    padding: 1rem 4rem 4rem 4rem;
+    // padding-top: 3rem;
 
-    &__btn-School {
-      background-color:transparent;
-      -moz-border-radius:6px;
-      -webkit-border-radius:6px;
-      border-radius:6px;
-      border:1px solid #ffaa22;
-      display:inline-block;
-      cursor:pointer;
-      color:#fff;
-      //font-family:Arial;
-      font-size:15px;
-      padding: 4px 7px;    
-      text-decoration:none;
-      margin: 1rem 1rem;	
+    &__btn-school {
+      font-size: 1.6rem;
+      border-bottom: 2px solid $color-back-sub;
+      text-decoration: none;
+      margin-left: 2rem;     
+      margin-bottom: 2rem;
+      color: $color-back-sub;
     }
     
-    &__btnSchool:hover {
-      background-color:$color-back-main-hover;
+    &__suoritukset {
+      padding-top: 3rem;
+      text-indent: 5vw;
+      font-size: 2rem;
+      font-weight: 400; 
     }
-    
-    &__btnSchool:active {
-      position:relative;
-      top:1px;
-      }
+
+    &__asiantuntemus {
+      text-indent: 5vw;
+      font-size: 2rem;
+      font-weight: 400; 
+    }
+
+    &__text--suoritukset {
+      font-size: 1.6rem;
+      font-weight: 400; 
+    }
+
+    &__line {
+      height: 8px; border: 0; box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 
@@ -47,10 +54,10 @@
   
   .progressBarContainer {
     width: 100%;
-    max-width: 45vw;  
+    max-width: 65vw;  
     height: 1rem;
     background-color: $color-back-sub;
-    //background: rgba(8,102,220,.2);
+    background: $color-contact;
     overflow: hidden;
     border-radius: 5px;
   }
@@ -58,7 +65,7 @@
   .progressBarValue {
     height: 1rem;
     float: left;
-    background: red;
+    background: $color-back-main;
     //background: rgba(8,102,220,.75);
   }
 

@@ -1,38 +1,17 @@
-.resume {
-  //display: inline-block;
-
-  // &__btn-School {
-  //   //display: block;
-  //   background-color:transparent;
-  //   -moz-border-radius:6px;
-  //   -webkit-border-radius:6px;
-  //   border-radius:6px;
-  //   border:1px solid $color-text-darkred;
-  //   display:inline-block;
-  //   cursor:pointer;
-  //   color:$color-text-darkred;
-  //   //font-family:Arial;
-  //   font-size:15px;
-  //   padding: 4px 7px;    
-  //   text-decoration:none;
-  //   margin: 1rem 1rem;	
-  // }
-  
-  // &__btnSchool:hover {
-  //   background-color:$color-back-main-hover;
-  // }
-  
-  // &__btnSchool:active {
-  //   position:relative;
-  //   top:1px;
-  //   }
-
+.resume { 
+  background-color: $color-resume;
+  grid-column: center-start / center-end;
+  display: grid;  
+  color: $color-back-sub;
+  font-family: Merriweather, serif;    
+  padding: 1rem 4rem 4rem 4rem;
 
 &__btn-school {
   font-size: 1.8rem;
   border-bottom: 2px solid $color-text-darkred;
   text-decoration: none;
   margin-left: 2rem;
+  margin-top: 0;
   padding-top: 1.8rem;
   color: $color-text-darkred;
 }
@@ -53,7 +32,7 @@
   padding-top: 1rem;
   font-size: 1.7rem;
   color: $color-text-darkred;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 .text-resume-section {
@@ -65,10 +44,10 @@
   font-weight: 600;
 }
 
-.resume-header-block {
-  display: inline-block;
-}
+// .resume-header-block {
+//   display: inline-block;
+// }
 
-// .btn-resume {
+// // .btn-resume {
 //   color: $color-text-darkred;
 // }

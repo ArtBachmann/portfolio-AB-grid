@@ -1,20 +1,21 @@
 %heading {
-    font-family: Josefin+Sans;
+    font-family: Merriweather, serif;
     font-weight: 400;
 }
 
 .heading-1 {
     @extend %heading;
-    font-size: 4.5vw;    
-    color: rgb(201, 186, 186);   
-    line-height: 1;
+    margin-top: 1.4rem;
+    font-size: 3.8vw;    
+    color: $color-heading-all;   
+    line-height: .8;
 }
 
 
 .heading-2 {
     @extend %heading;
-    font-size: 3.6vw;
-    color: rgb(201, 186, 186);
+    font-size: 3.2vw;
+    color: $color-heading-all; 
     font-style: italic;
     line-height: 0.8;
     
@@ -23,35 +24,18 @@
 .heading-3 {
     @extend %heading;
     font-size: 1.9rem;
-    color:$color-text-light;
-    text-transform: uppercase;
+    color: $color-heading-all; 
+    
 }
 
 
 .heading-4 {
     @extend %heading;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     font-style: italic;
-    color:rgb(201, 186, 186);
+    color: $color-heading-all; 
     
 }
-/*
-.btn {
-    background-color: $color-primary;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    font-family: $font-display;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding: 1.8rem 3rem;
-    cursor: pointer;
-    transition: all .2s;
-
-    &:hover {
-        background-color: $color-primary-dark;
-    }*/
-
 
 .mb-sm { margin-bottom: 2rem; }
 .mb-md { margin-bottom: 3rem; }
