@@ -273,9 +273,9 @@ address > a {
   .header__item--image-1 {
     grid-row: 1 / span 4;
     grid-column: 1 / span 4;
-    background-image: linear-gradient(to right top, rgba(23, 44, 44, 0.788), rgba(112, 94, 94, 0.795)), url(../img/keyboardLight.jpg);
+    background-image: linear-gradient(to right top, rgba(23, 44, 44, 0.788), rgba(133, 121, 121, 0.795)), url(../img/keyboardLight.jpg);
     background-size: cover;
-    opacity: 0.8; }
+    opacity: 0.6; }
   .header__item--image-2 {
     grid-row: 2 / span 3;
     grid-column: 2 / span 3;
