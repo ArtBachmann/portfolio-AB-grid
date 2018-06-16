@@ -13,8 +13,8 @@
       grid-column: 1 / span 4;
       background-image: linear-gradient(
           to right top,
-          rgba(23, 44, 44, 0.788),
-          rgba(133, 121, 121, 0.795)
+          rgba(123, 141, 141, 0.788),
+          rgba(173, 152, 152, 0.795)
         ),
         url(../img/keyboardLight.jpg);
       background-size: cover;
@@ -57,23 +57,16 @@
       grid-row: 3 / span 1;
       grid-column: 5 / -1;
       background: $color-back-sub;
-      padding: 1vh 3vw;
-      font-size: 1.7rem;
-      font-weight: 300;      
-      color: #fff;
-      line-height: 3.6vh;
-      // justify-self: center;   
-      // align-self: center;
-      background: $color-back-sub;
-      //color: $color-text-light;
+      padding: 0 6vw;          
+         
     }
 
-    &--header-vision-back {
-      display: grid;
-      grid-row: 3 / span 1;
-      grid-column: 5 / -1;
-      background: $color-back-sub;
-    }
+    // &--header-vision-back {
+    //   display: grid;
+    //   grid-row: 3 / span 1;
+    //   grid-column: 5 / -1;
+    //   background: $color-back-sub;
+    // }
 
     &--home {
       grid-row: 4 / span 1;

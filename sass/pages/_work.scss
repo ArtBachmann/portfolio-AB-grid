@@ -5,14 +5,14 @@
     color: $color-back-sub;
     font-family: Merriweather, serif;    
     padding: 1rem 4rem 4rem 4rem;
-    // padding-top: 3rem;
+    padding-top: 5rem;
 
     &__btn-school {
       font-size: 1.6rem;
       border-bottom: 2px solid $color-back-sub;
       text-decoration: none;
       margin-left: 2rem;     
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       color: $color-back-sub;
     }
     
@@ -35,6 +35,7 @@
     }
 
     &__line {
+      margin: 2rem 0;
       height: 8px; border: 0; box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5);
     }
 }
