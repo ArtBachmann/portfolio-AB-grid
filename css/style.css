@@ -63,7 +63,7 @@ body {
   text-align: center; }
 
 .work {
-  background-color: #b4bdbe;
+  background-color: rgba(180, 189, 190, 0.74);
   grid-column: center-start / center-end;
   display: grid;
   color: #232020;
@@ -110,7 +110,7 @@ body {
   max-width: 65vw;
   height: 1rem;
   background-color: #232020;
-  background: #abb4b4;
+  background: rgba(171, 180, 180, 0.87);
   overflow: hidden;
   border-radius: 5px; }
 
@@ -153,7 +153,7 @@ body {
   width: 100%; }
 
 .contact {
-  background-color: #abb4b4;
+  background-color: rgba(171, 180, 180, 0.87);
   grid-column: center-start / center-end;
   display: grid;
   font-size: 1.7rem;
@@ -167,19 +167,19 @@ address > a {
   text-decoration: none; }
 
 .resume {
-  background-color: silver;
+  background-color: rgba(192, 192, 192, 0.712);
   grid-column: center-start / center-end;
   display: grid;
   color: #232020;
   font-family: Merriweather, serif;
   padding: 1rem 4rem 4rem 4rem; }
   .resume__btn-school {
+    display: inline-block;
     font-size: 1.8rem;
     border-bottom: 2px solid #551b1b;
     text-decoration: none;
     margin-left: 2rem;
-    margin-top: 0;
-    padding-top: 1.8rem;
+    padding-top: 2.8rem;
     color: #551b1b; }
   .resume__header {
     display: block;
@@ -197,13 +197,13 @@ address > a {
 .text-resume-section {
   color: #551b1b;
   padding-top: .7rem;
-  padding-right: 3rem;
+  padding-left: 3rem;
   margin-bottom: 2rem;
   font-size: 1.4rem;
   font-weight: 600; }
 
 .home {
-  background-color: #cccccc;
+  background-color: rgba(204, 204, 204, 0.712);
   grid-column: center-start / center-end;
   display: grid;
   font-family: Merriweather, serif;
@@ -307,20 +307,20 @@ address > a {
   .header__item--home {
     grid-row: 4 / span 1;
     grid-column: 5 / 7;
-    background: #cccccc;
+    background: rgba(204, 204, 204, 0.712);
     z-index: 20; }
   .header__item--resume {
     grid-row: 4 / span 1;
     grid-column: 7 / 9;
-    background: silver; }
+    background: rgba(192, 192, 192, 0.712); }
   .header__item--work {
     grid-row: 4 / span 1;
     grid-column: 9 / 11;
-    background: #b4bdbe; }
+    background: rgba(180, 189, 190, 0.74); }
   .header__item--contact {
     grid-row: 4 / span 1;
     grid-column: 11 / 13;
-    background: #abb4b4; }
+    background: rgba(171, 180, 180, 0.87); }
   .header__icon {
     display: grid;
     fill: #ffaa22;
