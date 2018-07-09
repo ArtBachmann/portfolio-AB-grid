@@ -1,37 +1,25 @@
 .footer {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;		
-    background-color: $color-back-main;
-    color: $color-iconfill;   
-    grid-column: center-start / center-end;    
-    font-size: 1.7rem;
-    padding: 6rem;	
+  background-color: $color-back-main;
+  color: $color-iconfill;
+  grid-column: center-start / center-end;
+  font-size: 1.7rem;
+  padding: 4rem;
 
-	
-	&__icon--github {		
-		//display: inline-block;
-		width: 4.4rem;
-		height: 4.4rem;
-		fill: $color-iconfill;
-	  margin-left: 3vw;
-	}
+  &__icon--github {
+    width: 3.4rem;
+    height: 3.4rem;
+    fill: $color-iconfill;
+    margin-left: 3vw;
+  }
 
-	&__icon--twitter {	
-		//display: inline-block;
-		width: 4.4rem;
-		width: 4.4rem;
-		height: 4.4rem;
-		fill: $color-iconfill;	
-		margin-left: 2vw;
-	}
+  &__icon--twitter {
+    width: 3.4rem;
+    height: 3.4rem;
+    fill: $color-iconfill;
+    margin-left: 2vw;
+  }
 
-	.copy {		
-		//display: inline-block;
-		width: 4.4rem;
-		color: $color-iconfill;
-		//margin-right: 6vw;	
-	}
+  .copyright {
+    color: $color-iconfill;
+  }
 }
-
-

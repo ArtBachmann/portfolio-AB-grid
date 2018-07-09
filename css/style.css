@@ -1,3 +1,18 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
 *,
 *::before,
 *::after {
@@ -12,7 +27,10 @@ html {
 body {
   font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  background-image: linear-gradient(to right bottom, #ccc, #777);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .container {
   display: grid;
@@ -239,27 +257,22 @@ address > a {
     box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   background-color: #313a41;
   color: #bfdaf1;
   grid-column: center-start / center-end;
   font-size: 1.7rem;
-  padding: 6rem; }
+  padding: 4rem; }
   .footer__icon--github {
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 3.4rem;
+    height: 3.4rem;
     fill: #bfdaf1;
     margin-left: 3vw; }
   .footer__icon--twitter {
-    width: 4.4rem;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 3.4rem;
+    height: 3.4rem;
     fill: #bfdaf1;
     margin-left: 2vw; }
-  .footer .copy {
-    width: 4.4rem;
+  .footer .copyright {
     color: #bfdaf1; }
 
 .header {
