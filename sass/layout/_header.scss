@@ -28,7 +28,7 @@
       width: 105%;
       height: 105%;
       border-radius: 8px;
-      z-index: 10;
+      z-index: 20;
       box-shadow: 0 2rem 2rem rgba(#000, 0.1);
       border: 1px solid $color-back-main;
     }
@@ -37,7 +37,6 @@
       display: grid;
       grid-row: 1 / 1;
       grid-column: 5 / -1;
-      font-family: Merriweather, serif;
       background: $color-back-main;
       padding-left: 7vw;
       padding-top: 3vh;
@@ -57,21 +56,15 @@
       grid-row: 3 / span 1;
       grid-column: 5 / -1;
       background: $color-back-sub;
-      padding: 0 6vw;
+      padding: 0 2vw;
+      text-indent: 2vw;
     }
-
-    // &--header-vision-back {
-    //   display: grid;
-    //   grid-row: 3 / span 1;
-    //   grid-column: 5 / -1;
-    //   background: $color-back-sub;
-    // }
 
     &--home {
       grid-row: 4 / span 1;
       grid-column: 5 / 7;
       background: $color-home;
-      z-index: 20;
+      z-index: 10;
     }
 
     &--resume {
@@ -95,7 +88,7 @@
 
   &__icon {
     display: grid;
-    fill: $color-fill;
+    fill: $color-back-main;
     margin-left: auto;
     margin-right: auto;
     width: 3.4rem;
@@ -148,7 +141,7 @@
     align-items: end;
     width: 1.4rem;
     height: 1.4rem;
-    fill: $color-iconfill;
+    fill: $color-home-light;
   }
 
   .twitter {
@@ -159,6 +152,6 @@
     align-items: center;
     width: 1rem;
     height: 1rem;
-    fill: $color-iconfill;
+    fill: $color-home-light;
   }
 }

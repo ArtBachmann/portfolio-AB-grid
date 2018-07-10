@@ -1,4 +1,6 @@
 .footer {
+  display: flex;
+  align-items: stretch;
   background-color: $color-back-main;
   color: $color-iconfill;
   grid-column: center-start / center-end;
@@ -8,18 +10,23 @@
   &__icon--github {
     width: 3.4rem;
     height: 3.4rem;
-    fill: $color-iconfill;
-    margin-left: 3vw;
+    fill: $color-home-light;
+    margin-left: 4vw;
+    margin-top: 2vh;
   }
 
   &__icon--twitter {
-    width: 3.4rem;
-    height: 3.4rem;
-    fill: $color-iconfill;
-    margin-left: 2vw;
+    width: 4.8vw;
+    height: 4.8vh;
+    fill: $color-home-light;
+    margin-left: 1vw;
+    margin-top: 2vh;
   }
 
-  .copyright {
+  .legal {
     color: $color-iconfill;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
   }
 }
