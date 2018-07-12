@@ -171,54 +171,63 @@ address > a {
 .resume {
   background-color: rgba(192, 192, 192, 0.712);
   grid-column: center-start / center-end;
-  display: grid;
-  color: #232020;
-  font-family: Merriweather, serif;
-  padding: 1rem 4rem 4rem 4rem; }
+  font-family: Raleway, serif;
+  font-size: 1.8rem;
+  padding: 4rem 6vw; }
   .resume__btn-school {
-    display: inline-block;
+    border: none;
+    color: #444040;
     font-size: 1.8rem;
-    text-decoration: none;
-    padding: 2.8rem;
-    color: #551b1b; }
+    margin-bottom: 1.4rem;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .resume__btn-school span {
+      margin-left: 3px;
+      transition: margin-left 0.2s; }
+    .resume__btn-school:hover {
+      color: red; }
+      .resume__btn-school:hover span {
+        margin-left: 8px; }
+    .resume__btn-school:focus {
+      outline: none;
+      animation: pulsate 1s infinite; }
   .resume__header {
     color: #444040;
     padding: 3rem;
     padding-right: 160px;
     font-size: 3.5rem; }
 
+.resume__btn-school--koulutus {
+  margin-bottom: 0;
+  font-size: 1.4rem; }
+
 .header-resume-section {
   padding-left: 2vw;
   padding-top: 1rem;
   font-size: 1.7rem;
-  color: #551b1b; }
+  color: #444040; }
 
 .text-resume-section {
-  color: #551b1b;
-  padding-top: 0.7rem;
+  color: #444040;
+  background-color: #ccc;
+  border: 1px solid #c7bdc2;
+  text-indent: 3vw;
+  font-size: 1.4vw;
+  font-weight: 400;
+  padding: 1vw;
+  padding-top: 1rem;
   padding-left: 3rem;
   margin-bottom: 2rem;
-  font-size: 1.4rem;
-  font-weight: 600; }
+  margin-top: 2rem; }
 
 .home {
   background-color: rgba(204, 204, 204, 0.712);
   grid-column: center-start / center-end;
-  display: grid;
   font-family: Raleway, serif;
   font-size: 1.8rem;
-  padding: 8rem 6vw;
-  /* 
-  &__intro {
-    color: $color-text-dark;
-    font-size: 1.8rem;
-    text-indent: 3vw;
-    margin-bottom: 4rem;
-    background-color: $color-container-dark;
-    border: 1px solid $color-home-light-border;
-    padding: 1rem;
-    font-weight: 400;
-  } */ }
+  padding: 8rem 6vw; }
   .home__text {
     color: #444040;
     background-color: #ccc;
@@ -234,8 +243,6 @@ address > a {
     font-weight: 400;
     margin-bottom: 3rem;
     margin-top: 3rem; }
-  .home__list {
-    color: #551b1b; }
   .home__line {
     height: 8px;
     border: 0;
@@ -249,21 +256,15 @@ address > a {
   grid-column: center-start / center-end;
   font-size: 1.7rem;
   padding: 4rem; }
-  .footer__icon--github {
+  .footer__icon--github, .footer__icon--twitter, .footer__icon--location {
     width: 3.4rem;
     height: 3.4rem;
     fill: #e5e2e2;
     margin-left: 4vw;
     margin-top: 2vh; }
-  .footer__icon--twitter {
-    width: 4.8vw;
-    height: 4.8vh;
-    fill: #e5e2e2;
-    margin-left: 1vw;
-    margin-top: 2vh; }
   .footer .legal {
     color: #bfdaf1;
-    font-size: 1.2rem;
+    font-size: 1.4vw;
     text-align: center;
     padding: 2.5rem; }
 

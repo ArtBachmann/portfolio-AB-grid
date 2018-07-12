@@ -1,21 +1,9 @@
 .home {
   background-color: $color-home;
   grid-column: center-start / center-end;
-  display: grid;
   font-family: Raleway, serif;
   font-size: 1.8rem;
   padding: 8rem 6vw;
-  /* 
-  &__intro {
-    color: $color-text-dark;
-    font-size: 1.8rem;
-    text-indent: 3vw;
-    margin-bottom: 4rem;
-    background-color: $color-container-dark;
-    border: 1px solid $color-home-light-border;
-    padding: 1rem;
-    font-weight: 400;
-  } */
 
   &__text {
     color: $color-text-dark;
@@ -34,10 +22,6 @@
     font-weight: 400;
     margin-bottom: 3rem;
     margin-top: 3rem;
-  }
-
-  &__list {
-    color: rgb(85, 27, 27);
   }
 
   &__line {

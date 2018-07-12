@@ -1,18 +1,37 @@
 .resume {
   background-color: $color-resume;
   grid-column: center-start / center-end;
-  display: grid;
-  color: $color-back-sub;
-  font-family: Merriweather, serif;
-  padding: 1rem 4rem 4rem 4rem;
+  font-family: Raleway, serif;
+  font-size: 1.8rem;
+  padding: 4rem 6vw;
 
   &__btn-school {
-    display: inline-block;
+    border: none;
+    color: $color-text-dark;
     font-size: 1.8rem;
-    //border-bottom: 2px solid $color-text-darkred;
-    text-decoration: none;
-    padding: 2.8rem;
-    color: $color-text-darkred;
+    margin-bottom: 1.4rem;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    & span {
+      margin-left: 3px;
+      transition: margin-left 0.2s;
+    }
+
+    &:hover {
+      color: red;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      animation: pulsate 1s infinite;
+    }
   }
 
   &__header {
@@ -23,27 +42,28 @@
   }
 }
 
+.resume__btn-school--koulutus {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
 .header-resume-section {
   padding-left: 2vw;
   padding-top: 1rem;
   font-size: 1.7rem;
-  color: $color-text-darkred;
+  color: $color-text-dark;
 }
 
 .text-resume-section {
-  color: $color-text-darkred;
-  // text-indent: 3vw;
-  padding-top: 0.7rem;
+  color: $color-text-dark;
+  background-color: $color-container-dark;
+  border: 1px solid $color-home-light-border;
+  text-indent: 3vw;
+  font-size: 1.4vw;
+  font-weight: 400;
+  padding: 1vw;
+  padding-top: 1rem;
   padding-left: 3rem;
   margin-bottom: 2rem;
-  font-size: 1.4rem;
-  font-weight: 600;
+  margin-top: 2rem;
 }
-
-// .resume-header-block {
-//   display: inline-block;
-// }
-
-// // .btn-resume {
-//   color: $color-text-darkred;
-// }

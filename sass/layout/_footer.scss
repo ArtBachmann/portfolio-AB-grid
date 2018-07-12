@@ -7,7 +7,9 @@
   font-size: 1.7rem;
   padding: 4rem;
 
-  &__icon--github {
+  &__icon--github,
+  &__icon--twitter,
+  &__icon--location {
     width: 3.4rem;
     height: 3.4rem;
     fill: $color-home-light;
@@ -15,17 +17,18 @@
     margin-top: 2vh;
   }
 
-  &__icon--twitter {
-    width: 4.8vw;
-    height: 4.8vh;
-    fill: $color-home-light;
-    margin-left: 1vw;
-    margin-top: 2vh;
-  }
+  // &__icon--twitter {
+  //   width: 2.4rem;
+  //   height: 2.4rem;
+  //   width: 300%;
+  //   fill: $color-home-light;
+  //   margin-left: 1vw;
+  //   margin-top: 2vh;
+  // }
 
   .legal {
     color: $color-iconfill;
-    font-size: 1.2rem;
+    font-size: 1.4vw;
     text-align: center;
     padding: 2.5rem;
   }
