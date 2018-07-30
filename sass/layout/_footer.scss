@@ -15,6 +15,21 @@
     fill: $color-home-light;
     margin-left: 4vw;
     margin-top: 2vh;
+
+    @media only screen and (max-width: $bp-medium) {
+               
+      width: 2.6rem;
+      height: 2.6rem;       
+    
+}
+
+    
+    @media only screen and (max-width: $bp-small) {
+               
+      width: 1.8rem;
+      height: 1.8rem;       
+    
+}
   }
 
   // &__icon--twitter {
