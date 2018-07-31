@@ -15,36 +15,13 @@
     fill: $color-home-light;
     margin-left: 4vw;
     margin-top: 2vh;
-
-    @media only screen and (max-width: $bp-medium) {
-               
-      width: 2.6rem;
-      height: 2.6rem;       
-    
-}
-
-    
-    @media only screen and (max-width: $bp-small) {
-               
-      width: 1.8rem;
-      height: 1.8rem;       
-    
-}
   }
 
-  // &__icon--twitter {
-  //   width: 2.4rem;
-  //   height: 2.4rem;
-  //   width: 300%;
-  //   fill: $color-home-light;
-  //   margin-left: 1vw;
-  //   margin-top: 2vh;
+  // .legal {
+  //   color: $color-iconfill;
+  //   font-size: 1.4vw;
+  //   text-align: center;
+  //   padding: 2.5rem;
   // }
-
-  .legal {
-    color: $color-iconfill;
-    font-size: 1.4vw;
-    text-align: center;
-    padding: 2.5rem;
-  }
 }
+

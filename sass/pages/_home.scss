@@ -1,24 +1,23 @@
 .home {
   background-color: $color-home;
   grid-column: center-start / center-end;
-  font-family: Raleway, serif;
-  font-size: 1.8rem;
+  font-family: Raleway, serif;  
   padding: 8rem 6vw;
 
   &__text {
     color: $color-text-dark;
     background-color: $color-container-dark;
-    border: 1px solid $color-home-light-border;
-    text-indent: 3vw;
-    font-size: 1.4vw;
-    font-weight: 400;
-    padding: 1vw;
-  }
+    //border: 0 1px solid $color-home-light-border;
+    text-indent: 2.6rem;
+    font-size: 1.6rem;
+    font-weight: 400;    
+    margin:0;
+  }  
 
   &__heading-2 {
     color: $color-text-dark;
     text-indent: 5vw;
-    font-size: 2.2vw;
+    font-size: 2.6rem;
     font-weight: 400;
     margin-bottom: 3rem;
     margin-top: 3rem;
@@ -29,4 +28,6 @@
     border: 0;
     box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5);
   }
+
+  
 }

@@ -167,9 +167,25 @@ body {
     height: 8px;
     border: 0;
     box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5); }
-
-address > a {
-  text-decoration: none; }
+  .contact address > a {
+    text-decoration: none; }
+  .contact a {
+    color: #990000;
+    font-family: helvetica;
+    text-decoration: none; }
+  .contact a:hover {
+    text-decoration: underline; }
+  .contact a:active {
+    color: black; }
+  .contact a:visited {
+    color: purple; }
+  .contact .address {
+    font-family: Raleway, serif;
+    text-indent: 5vw;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
 
 .resume {
   background-color: rgba(192, 192, 192, 0.712);
@@ -190,7 +206,7 @@ address > a {
       margin-left: 3px;
       transition: margin-left 0.2s; }
     .resume__btn-school:hover {
-      color: red; }
+      color: #990000; }
       .resume__btn-school:hover span {
         margin-left: 8px; }
     .resume__btn-school:focus {
@@ -202,15 +218,17 @@ address > a {
     padding-right: 160px;
     font-size: 3.5rem; }
 
-.resume__btn-school--koulutus {
-  margin-bottom: 0;
-  font-size: 1.4rem; }
-
 .header-resume-section {
   padding-left: 2vw;
   padding-top: 1rem;
   font-size: 1.7rem;
   color: #444040; }
+  @media only screen and (max-width: 50em) {
+    .header-resume-section {
+      font-size: 70%; } }
+  @media only screen and (max-width: 37.5em) {
+    .header-resume-section {
+      font-size: 60%; } }
 
 .text-resume-section {
   color: #444040;
@@ -225,24 +243,30 @@ address > a {
   margin-bottom: 2rem;
   margin-top: 2rem; }
 
+.indent {
+  color: #444040;
+  background-color: #ccc;
+  text-indent: 2.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0; }
+
 .home {
   background-color: rgba(204, 204, 204, 0.712);
   grid-column: center-start / center-end;
   font-family: Raleway, serif;
-  font-size: 1.8rem;
   padding: 8rem 6vw; }
   .home__text {
     color: #444040;
     background-color: #ccc;
-    border: 1px solid #c7bdc2;
-    text-indent: 3vw;
-    font-size: 1.4vw;
+    text-indent: 2.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    padding: 1vw; }
+    margin: 0; }
   .home__heading-2 {
     color: #444040;
     text-indent: 5vw;
-    font-size: 2.2vw;
+    font-size: 2.6rem;
     font-weight: 400;
     margin-bottom: 3rem;
     margin-top: 3rem; }
@@ -265,19 +289,6 @@ address > a {
     fill: #e5e2e2;
     margin-left: 4vw;
     margin-top: 2vh; }
-    @media only screen and (max-width: 50em) {
-      .footer__icon--github, .footer__icon--twitter, .footer__icon--location {
-        width: 2.6rem;
-        height: 2.6rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .footer__icon--github, .footer__icon--twitter, .footer__icon--location {
-        width: 1.8rem;
-        height: 1.8rem; } }
-  .footer .legal {
-    color: #bfdaf1;
-    font-size: 1.4vw;
-    text-align: center;
-    padding: 2.5rem; }
 
 .header {
   grid-column: center-start / center-end;
