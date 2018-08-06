@@ -1,14 +1,13 @@
 .resume {
   background-color: $color-resume;
   grid-column: center-start / center-end;
-  font-family: Raleway, serif;
-  font-size: 1.8rem;
+  font-family: Raleway, serif;  
   padding: 4rem 6vw;
 
   &__btn-school {
     border: none;
     color: $color-text-dark;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     margin-bottom: 1.4rem;
     display: inline-block;
     background-color: transparent;
@@ -38,7 +37,7 @@
     color: $color-text-dark;
     padding: 3rem;
     padding-right: 160px;
-    font-size: 3.5rem;
+    //font-size: 3.5rem;
   }
 }
 
@@ -59,10 +58,10 @@
 
 .text-resume-section {
   color: $color-text-dark;
-  background-color: $color-container-dark;
-  border: 1px solid $color-home-light-border;
+  background-color: $color-container-resume;
+  //border: 1px solid $color-home-light-border;
   text-indent: 3vw;
-  font-size: 1.4vw;
+  font-size: 2.4rem;
   font-weight: 400;
   padding: 1vw;
   padding-top: 1rem;
@@ -73,7 +72,7 @@
 
 .indent {
    color: $color-text-dark;
-    background-color: $color-container-dark;
+    background-color: $color-container-resume;
     //border: 0 1px solid $color-home-light-border;
     text-indent: 2.6rem;
     font-size: 1.6rem;

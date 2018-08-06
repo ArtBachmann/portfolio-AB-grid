@@ -17,7 +17,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 5vh;
-  background-image: linear-gradient(to right bottom, #f0eeee, #ccc);
+  background-image: linear-gradient(to right bottom, #f0eeee, rgba(200, 212, 214, 0.781));
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
@@ -68,20 +68,31 @@ body {
   text-align: center; }
 
 .work {
-  background-color: rgba(180, 189, 190, 0.74);
+  background-color: rgba(185, 197, 199, 0.781);
   grid-column: center-start / center-end;
-  display: grid;
-  color: #232020;
-  font-family: Merriweather, serif;
+  font-family: Raleway, serif;
+  font-size: 2.4rem;
   padding: 1rem 4rem 4rem 4rem;
   padding-top: 5rem; }
   .work__btn-school {
-    font-size: 1.6rem;
-    border-bottom: 2px solid #232020;
-    text-decoration: none;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
-    color: #232020; }
+    border: none;
+    color: #444040;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .work__btn-school span {
+      margin-left: 3px;
+      transition: margin-left 0.2s; }
+    .work__btn-school:hover {
+      color: #990000; }
+      .work__btn-school:hover span {
+        margin-left: 8px; }
+    .work__btn-school:focus {
+      outline: none;
+      animation: pulsate 1s infinite; }
   .work__suoritukset {
     padding-top: 3rem;
     text-indent: 5vw;
@@ -89,10 +100,11 @@ body {
     font-weight: 400; }
   .work__asiantuntemus {
     text-indent: 5vw;
-    font-size: 2rem;
-    font-weight: 400; }
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-top: 2.8rem; }
   .work__text--suoritukset {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400; }
   .work__line {
     margin: 2rem 0;
@@ -115,9 +127,13 @@ body {
   max-width: 65vw;
   height: 0.4rem;
   background-color: #232020;
-  background: rgba(171, 180, 180, 0.87);
+  background: rgba(173, 185, 187, 0.781);
   overflow: hidden;
   border-radius: 5px; }
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 400; }
 
 .progressBarValue {
   height: 1rem;
@@ -158,7 +174,7 @@ body {
   width: 100%; }
 
 .contact {
-  background-color: rgba(171, 180, 180, 0.87);
+  background-color: rgba(173, 185, 187, 0.781);
   grid-column: center-start / center-end;
   display: grid;
   font-size: 1.7rem;
@@ -188,15 +204,14 @@ body {
     margin-top: 3rem; }
 
 .resume {
-  background-color: rgba(192, 192, 192, 0.712);
+  background-color: rgba(200, 212, 214, 0.781);
   grid-column: center-start / center-end;
   font-family: Raleway, serif;
-  font-size: 1.8rem;
   padding: 4rem 6vw; }
   .resume__btn-school {
     border: none;
     color: #444040;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     margin-bottom: 1.4rem;
     display: inline-block;
     background-color: transparent;
@@ -215,8 +230,7 @@ body {
   .resume__header {
     color: #444040;
     padding: 3rem;
-    padding-right: 160px;
-    font-size: 3.5rem; }
+    padding-right: 160px; }
 
 .header-resume-section {
   padding-left: 2vw;
@@ -232,10 +246,9 @@ body {
 
 .text-resume-section {
   color: #444040;
-  background-color: #ccc;
-  border: 1px solid #c7bdc2;
+  background-color: rgba(200, 209, 211, 0.781);
   text-indent: 3vw;
-  font-size: 1.4vw;
+  font-size: 2.4rem;
   font-weight: 400;
   padding: 1vw;
   padding-top: 1rem;
@@ -245,20 +258,20 @@ body {
 
 .indent {
   color: #444040;
-  background-color: #ccc;
+  background-color: rgba(200, 209, 211, 0.781);
   text-indent: 2.6rem;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0; }
 
 .home {
-  background-color: rgba(204, 204, 204, 0.712);
+  background-color: rgba(216, 225, 226, 0.781);
   grid-column: center-start / center-end;
   font-family: Raleway, serif;
   padding: 8rem 6vw; }
   .home__text {
     color: #444040;
-    background-color: #ccc;
+    background-color: rgba(210, 219, 221, 0.781);
     text-indent: 2.6rem;
     font-size: 1.6rem;
     font-weight: 400;
@@ -302,7 +315,7 @@ body {
   .header__item--image-1 {
     grid-row: 1 / span 4;
     grid-column: 1 / span 4;
-    background-image: linear-gradient(to right top, rgba(123, 141, 141, 0.788), rgba(173, 152, 152, 0.795)), url(../img/portf1.jpg);
+    background-image: linear-gradient(to right top, rgba(123, 141, 141, 0.788), rgba(143, 160, 165, 0.795)), url(../img/portf1.jpg);
     background-size: cover;
     opacity: 0.6; }
   .header__item--image-2 {
@@ -344,20 +357,20 @@ body {
   .header__item--home {
     grid-row: 4 / span 1;
     grid-column: 5 / 7;
-    background: rgba(204, 204, 204, 0.712);
+    background: rgba(216, 225, 226, 0.781);
     z-index: 10; }
   .header__item--resume {
     grid-row: 4 / span 1;
     grid-column: 7 / 9;
-    background: rgba(192, 192, 192, 0.712); }
+    background: rgba(200, 212, 214, 0.781); }
   .header__item--work {
     grid-row: 4 / span 1;
     grid-column: 9 / 11;
-    background: rgba(180, 189, 190, 0.74); }
+    background: rgba(185, 197, 199, 0.781); }
   .header__item--contact {
     grid-row: 4 / span 1;
     grid-column: 11 / 13;
-    background: rgba(171, 180, 180, 0.87); }
+    background: rgba(173, 185, 187, 0.781); }
   .header__icon {
     display: grid;
     fill: #313a41;
