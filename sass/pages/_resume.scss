@@ -48,11 +48,15 @@
   color: $color-text-dark;
 
   @media only screen and (max-width: $bp-medium) {
-    font-size: 70%;
+    font-size: 130%;
 }
 
 @media only screen and (max-width: $bp-small) {
-    font-size: 60%;
+    font-size: 110%;
+}
+
+@media only screen and (max-width: $bp-smallest) {
+  font-size: 95%;
 }
 }
 
