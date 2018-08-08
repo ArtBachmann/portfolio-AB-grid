@@ -17,12 +17,12 @@
       grid-column: 1 / span 4;
       background-image: linear-gradient(
           to right top,
-          rgba(123, 141, 141, 0.788),
-          rgba(143, 160, 165, 0.795)
+          rgba(221, 231, 231, 0.788),
+          rgba(123, 132, 134, 0.795)
         ),
         url(../img/portf1.jpg);
       background-size: cover;
-      opacity: 0.6;
+     //opacity: 0.6;
     }
 
     &--image-2 {
