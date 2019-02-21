@@ -210,8 +210,9 @@ h4 {
   padding: 4rem 6vw; }
   .resume__btn-school {
     border: none;
-    color: #444040;
+    color: #6b0505;
     font-size: 2.4rem;
+    font-weight: bold;
     margin-bottom: 1.4rem;
     display: inline-block;
     background-color: transparent;
